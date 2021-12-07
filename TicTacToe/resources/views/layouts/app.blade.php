@@ -25,7 +25,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <i class="fas fa-gamepad fa-2x pe-2"></i>
+                <i class="fas fa-gamepad fa-3x pe-2"></i>
                 <a class="navbar-brand" href="{{ url('/home') }}">
                      <strong>Tic Tac Toe</strong>
                 </a>
