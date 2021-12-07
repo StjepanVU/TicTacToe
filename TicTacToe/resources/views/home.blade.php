@@ -26,7 +26,7 @@
                     <div class="card card-box">
                         <div class="card-header new-game-header"><strong>New game</strong></div>
 
-                        <a style="text-decoration: none; color:inherit; !important;"href="">
+                        <a style="text-decoration: none; color:inherit; !important;"href="/game/create">
                             <div class="card-body text-center card-body-class" style="background:#F4FFF3;">
 
                                     <i class ="fas fa-plus fa-5x new-game"
