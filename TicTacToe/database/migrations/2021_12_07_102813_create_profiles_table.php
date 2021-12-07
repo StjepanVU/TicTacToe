@@ -15,7 +15,13 @@ class CreateProfilesTable extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id'); //Foreign key
+            $table->text('username');
+            $table->integer('played_games');
+            $table->integer('winning_percentage');
             $table->timestamps();
+
+            $table->index('user_id');
         });
     }
 
