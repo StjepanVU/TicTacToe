@@ -29,4 +29,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Profile route
 Route::get('/profile/{user}', 'App\Http\Controllers\ProfilesController@show');
 
+// Create game
+Route::get('/game/create', 'App\Http\Controllers\GamesController@create');
+
 
