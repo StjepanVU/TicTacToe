@@ -16,7 +16,7 @@
             <div class="card-body d-flex">
                 <i class="fas fa-user-tie fa-10x"></i>
                 <ul style="list-style-type: none;" class="ps-5">
-                    <li>Username: <strong>stjepan</strong></li>
+                    <li>Username: <strong>{{$user->username}}</strong></li>
                     <hr>
                     <li>Played games: <strong>254</strong> </li>
                     <hr>

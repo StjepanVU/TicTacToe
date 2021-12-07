@@ -6,14 +6,12 @@
         width: 150px;
         height: 150px;
     }
-    .new-game-header {
-        background: darkslategrey;
-    }
-    a > fas {
-        text-decoration: none !important;
+    .card-body-class:hover {
+        border: 2px solid black;
     }
 
 </style>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -27,20 +25,29 @@
                     <!-- NEW GAME CARD -->
                     <div class="card card-box">
                         <div class="card-header new-game-header"><strong>New game</strong></div>
-                        <div class="card-body text-center">
-                            <a style="text-decoration: none; color:inherit; !important;"href="">
-                                <i class="fas fa-plus fa-5x"></i>
-                            </a>
-                        </div>
+
+                        <a style="text-decoration: none; color:inherit; !important;"href="">
+                            <div class="card-body text-center card-body-class" style="background:#F4FFF3;">
+
+                                    <i class ="fas fa-plus fa-5x new-game"
+                                       style="color:#257321;">
+
+
+                                    </i>
+
+                            </div>
+                        </a>
                     </div>
 
                     <div class="card card-box">
-                        <div class="card-header"><strong><strong>Game #1</strong></strong></div>
-                        <div class="card-body text-center">
-                            <a style="text-decoration: none; color:inherit; !important;" href="">
-                                <i class="far fa-lightbulb fa-5x"></i>
-                            </a>
-                        </div>
+                        <div class="card-header text-center"><strong><strong>Game #1</strong></strong></div>
+                        <a style="text-decoration: none; color:inherit; !important;" href="">
+                            <div class="card-body text-center card-body-class">
+
+                                    <i class="far fa-lightbulb fa-5x"></i>
+
+                            </div>
+                        </a>
                     </div>
 
 
