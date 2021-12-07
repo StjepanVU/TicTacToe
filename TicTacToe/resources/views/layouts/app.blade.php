@@ -17,14 +17,17 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b235fbc4a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
+                <i class="fas fa-gamepad fa-2x pe-2"></i>
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                    Tic Tac Toe
+                     <strong>Tic Tac Toe</strong>
                 </a>
 
 
@@ -63,16 +66,19 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
-                                    <!-- PROFILE DROPDOW MENU -->
-                                     <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                    <!-- HOME DROPDOWN MENU -->
+                                    <a class="dropdown-item" href="/home">
+                                        {{ __('Home') }}
+                                    </a>
+
+
+
+                                    <!-- PROFILE DROPDOWN MENU -->
+                                     <a class="dropdown-item" href="/profile">
                                         {{ __('Profile') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
+
 
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
@@ -98,6 +104,10 @@
             @yield('content')
         </main>
     </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 </body>
 </html>
 
