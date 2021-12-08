@@ -18,7 +18,13 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="card-header"><strong>{{ __('Active Games') }}</strong></div>
+        <div class="card-header d-flex text-center">
+            <h4 class="pt-2"><strong>{{ __('Active Games') }}</strong></h4>
+            <div class="offset-8 pt-2">
+            <input type="text">
+            <button class="btn-group-sm btn-primary">Search</button>
+            </div>
+        </div>
         <div class="col-md-12">
 
             <div class="row shadow-lg p-3 mb-5 bg-body rounded">
