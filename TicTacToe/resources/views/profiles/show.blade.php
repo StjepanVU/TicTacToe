@@ -15,7 +15,7 @@
                     <hr>
                     <li>Played games: <strong>{{$user->games->count()}}</strong> </li>
                     <hr>
-                    <li>Winning percentage: <strong>{{$user->games->count()/$games->count()}}</strong> </li>
+                    <li>Winning percentage: <strong>{{round($user->games->count()/$games->count(),2)*100}}%</strong> </li>
                     <hr>
                 </ul>
             </div>
