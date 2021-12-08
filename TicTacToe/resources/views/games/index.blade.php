@@ -18,7 +18,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="card-header"><strong>{{ __('Game log') }}</strong></div>
+        <div class="card-header"><strong>{{ __('Active Games') }}</strong></div>
         <div class="col-md-12">
 
             <div class="row shadow-lg p-3 mb-5 bg-body rounded">
