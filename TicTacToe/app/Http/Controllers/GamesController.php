@@ -30,7 +30,7 @@ class GamesController extends Controller
         auth()->user()->games()->create($data);
         // \App\Models\Game::create($data);
 
-
+        return redirect('/home');
 
     }
 }
