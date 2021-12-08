@@ -3,63 +3,52 @@
 <style>
     .card-box {
         margin-right:20px;
-        width: 150px;
+        width: 250px;
         height: 150px;
     }
     .card-body-class:hover {
         border: 2px solid black;
+    }
+    .games-container {
+        border:1px solid black;
     }
 
 </style>
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-11">
-            <div class="card">
-                <div class="card-header"><strong>{{ __('Game log') }}</strong></div>
+    <div class="row">
+        <div class="card-header"><strong>{{ __('Game log') }}</strong></div>
+        <div class="col-md-12">
 
-                <!-- GAME LOG CONTAINER -->
-                <div class="card-body d-flex">
+            <div class="row shadow-lg p-3 mb-5 bg-body rounded">
 
-                    <!-- NEW GAME CARD -->
+                <!-- NEW GAME CARD -->
+                <div class="col-3 p-4">
                     <div class="card card-box">
                         <div class="card-header new-game-header"><strong>New game</strong></div>
-
-                        <a style="text-decoration: none; color:inherit; !important;"href="/game/create">
-                            <div class="card-body text-center card-body-class" style="background:#F4FFF3;">
-
-                                    <i class ="fas fa-plus fa-5x new-game"
-                                       style="color:#257321;">
-
-
-                                    </i>
-
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- CREATED GAMES -->
-                    @foreach($games as $games)
-                    <div class="card card-box">
-                        <div class="card-header text-center"><strong><strong>{{$games->title}}</strong></strong></div>
-                        <a style="text-decoration: none; color:inherit; !important;" href="">
-                            <div class="card-body text-center card-body-class">
-
-                                    <i class="far fa-lightbulb fa-5x"></i>
-
-                            </div>
-                        </a>
-                    </div>
-                    @endforeach
-
-
-
-
-
+                            <a style="text-decoration: none; color:inherit; !important;"href="/game/create">
+                                <div class="card-body text-center card-body-class" style="background:#F4FFF3;">
+                                        <i class ="fas fa-plus fa-5x new-game"
+                                       style="color:#257321;"></i>
+                                </div>
+                            </a>
                 </div>
+                </div>
+                <!-- NEW GAMES -->
+                @foreach($games as $games)
+                <div class="col-3 p-4">
 
-
+                        <div class="card card-box">
+                            <div class="card-header text-center"><strong><strong>{{$games->title}}</strong></strong></div>
+                            <a style="text-decoration: none; color:inherit; !important;" href="">
+                                <div class="card-body text-center card-body-class">
+                                    <i class="fas fa-dice fa-5x" style="color:#3A5067;"></i>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -67,16 +56,4 @@
 @endsection
 
 
-<!--
 
-<div class="card-body">
-                    @if (session('status'))
-    <div class="alert alert-success" role="alert">
-{{ session('status') }}
-        </div>
-@endif
-
-{{ __('You are logged in!') }}
-</div>
-
--->

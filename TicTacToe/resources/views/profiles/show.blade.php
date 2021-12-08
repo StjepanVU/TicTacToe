@@ -14,20 +14,18 @@
 
 
             <div class="card-body d-flex">
-                <i class="fas fa-user-tie fa-10x"></i>
+                <i class="fas fa-user-tie fa-10x" style="color:#3A5067;"></i>
                 <ul style="list-style-type: none;" class="ps-5">
                     <li>Username: <strong>{{$user->username}}</strong></li>
                     <hr>
-                    <li>Played games: <strong>254</strong> </li>
+                    <li>Played games: <strong>{{$user->games->count()}}</strong> </li>
                     <hr>
                     <li>Winning percentage: <strong>85%</strong> </li>
                     <hr>
                 </ul>
             </div>
 
-            @foreach($user->games as $game)
-            {{$game->title}}
-            @endforeach
+
          </div>
     </div>
 </div>
