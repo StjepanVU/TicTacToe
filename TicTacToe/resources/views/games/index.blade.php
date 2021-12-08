@@ -19,10 +19,20 @@
 <div class="container">
     <div class="row">
         <div class="card-header d-flex text-center">
-            <h4 class="pt-2"><strong>{{ __('Active Games') }}</strong></h4>
+            <h4 class="pt-3"><strong>{{ __('Active Games') }}</strong></h4>
             <div class="offset-8 pt-2">
-            <input type="text">
-            <button class="btn-group-sm btn-primary">Search</button>
+
+                <form class="d-flex" action="/" method="get">
+                    @csrf
+                    <input id="title"
+                           type="text"
+                           class="form-control @error('title') is-invalid @enderror"
+                           name="search" value="{{ old('title') }}"
+                           required autocomplete="title" autofocus>
+
+                    <button class="btn btn-primary"
+                    style="margin-left:5px;">Search</button>
+                </form>
             </div>
         </div>
         <div class="col-md-12">

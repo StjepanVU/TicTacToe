@@ -39,6 +39,9 @@ Route::get('/','App\Http\Controllers\GamesController@index');
 // Game
 Route::get('/game/{game}','App\Http\Controllers\GamesController@show');
 
+// Search
+Route::get('/search','App\Http\Controllers\GamesController@search');
+
 
 
 

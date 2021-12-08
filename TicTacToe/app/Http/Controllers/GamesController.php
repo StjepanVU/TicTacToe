@@ -11,9 +11,16 @@ class GamesController extends Controller
     }
 
     public function index() {
-        // $users = auth()->user()->games();
-        $games = Game::latest()->get();
-        // dd($games);
+        $search = request()->query('search');
+        if($search) {
+            // dd($search);
+            $games = Game::where('title','LIKE',"%{$search}%")->get();
+            // dd($games);
+        }
+        else {
+            $games = Game::latest()->get();
+        }
+
 
         return view('games.index', compact('games'));
     }
@@ -46,6 +53,19 @@ class GamesController extends Controller
         return view('games.show',compact('game'));
     }
 
+    public function search() {
+        $search = request()->query('search');
+
+        if($search) {
+            $game = Game::where('title', 'LIKE', '%{$search}%')->simplePaginate(3);
+        }
+        else {
+            $game = Game::simplePaginate(3);
+        }
+
+
+        return view('games.search',compact('game'));
+    }
 
 
 
