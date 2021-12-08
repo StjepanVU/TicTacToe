@@ -15,9 +15,12 @@ class CreateGamesTable extends Migration
     {
         Schema::create('games', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('user_id'); //Foreign key
+            //$table->foreignId('user_id')->constrained();
             $table->timestamps();
-            $table->string('title');
-            $table->string('description');
+            $table->text('title');
+
+            $table->index('user_id');
         });
     }
 

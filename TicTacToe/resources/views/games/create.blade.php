@@ -9,10 +9,14 @@
 </style>
 @section('content')
 <div class="container justify-content-center">
-    <div class="col-md-6 offset-3">
-        <form action="/p" enctype="multipart/form-data" method="post">
+
+    <div class="col-md-6 offset-3 ">
+        <form action="/game" enctype="multipart/form-data" method="post">
+            @csrf
         <div class="card">
+
             <div class="card-header"><strong>Game Title: </strong>
+                <!--INPUT TITLE -->
                 <input id="title"
                        type="text"
                        class="form-control @error('title') is-invalid @enderror"
@@ -24,9 +28,13 @@
                                 <strong>{{ $message }}</strong>
                                 </span>
                 @enderror
+                <button class="btn btn-primary"
+                style="margin-left:80%;
+                margin-top:1%;">Create game
+                </button>
 
-            <button class="btn btn-primary p-1 mr-1"
-            style="margin-left: 250px;">Create game</button>
+
+
             </div>
 
             <!-- Game Box -->
@@ -37,8 +45,10 @@
 
             </div>
             </div>
+
             </form>
         </div>
+
 
     </div>
 
