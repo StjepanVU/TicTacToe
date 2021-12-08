@@ -42,6 +42,10 @@ class GamesController extends Controller
 
     }
 
+    public function show(\App\Models\Game $game) {
+        return view('games.show',compact('game'));
+    }
+
 
 
 

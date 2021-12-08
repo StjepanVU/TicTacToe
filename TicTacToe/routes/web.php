@@ -32,13 +32,12 @@ Route::get('/profile/{user}', 'App\Http\Controllers\ProfilesController@show');
 // Create game, store game object
 Route::get('/game/create', 'App\Http\Controllers\GamesController@create');
 Route::post('/game', 'App\Http\Controllers\GamesController@store');
+
 // Games log
 Route::get('/','App\Http\Controllers\GamesController@index');
-// Open game
-Route::get('/game/{game}', 'App\Http\Controllers\GamesController@show');
 
 // Game
-Route::get('/game/{game}','App\Http\Controllers\GamesController@');
+Route::get('/game/{game}','App\Http\Controllers\GamesController@show');
 
 
 

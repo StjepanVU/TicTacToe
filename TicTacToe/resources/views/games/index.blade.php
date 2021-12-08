@@ -41,7 +41,7 @@
 
                         <div class="card card-box">
                             <div class="card-header text-center"><strong><strong>{{$games->title}}</strong></strong></div>
-                            <a style="text-decoration: none; color:inherit; !important;" href="">
+                            <a style="text-decoration: none; color:inherit; !important;" href="/game/{{$games->id}}">
                                 <div class="card-body text-center card-body-class">
                                     <i class="fas fa-dice fa-5x" style="color:#3A5067;"></i>
                                 </div>
