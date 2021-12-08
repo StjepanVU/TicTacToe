@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <i class="fas fa-gamepad fa-3x pe-2"></i>
-            <a class="navbar-brand" href="{{ url('/home') }}">
+            <a class="navbar-brand" href="{{ url('/') }}">
                 <strong>Tic Tac Toe</strong>
             </a>
 
@@ -43,7 +43,7 @@
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
                                 <!-- HOME DROPDOWN MENU -->
-                                <a class="dropdown-item" href="/home">
+                                <a class="dropdown-item" href="/">
                                     {{ __('Home') }}
                                 </a>
 
