@@ -21,6 +21,7 @@ class CreateProfilesTable extends Migration
             $table->integer('winning_percentage');
             $table->timestamps();
 
+            // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->index('user_id');
         });
     }

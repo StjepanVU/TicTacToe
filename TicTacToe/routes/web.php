@@ -13,17 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Auth::routes();
+/*Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+*/
+
+Auth::routes();
 
 
 // Profile route
@@ -32,6 +32,8 @@ Route::get('/profile/{user}', 'App\Http\Controllers\ProfilesController@show');
 // Create game, store game object
 Route::get('/game/create', 'App\Http\Controllers\GamesController@create');
 Route::post('/game', 'App\Http\Controllers\GamesController@store');
+// Games log
+Route::get('/','App\Http\Controllers\GamesController@index');
 
 
 

@@ -24,6 +24,10 @@
                     <hr>
                 </ul>
             </div>
+
+            @foreach($user->games as $game)
+            {{$game->title}}
+            @endforeach
          </div>
     </div>
 </div>

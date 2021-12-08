@@ -40,9 +40,9 @@
                     </div>
 
                     <!-- CREATED GAMES -->
-
+                    @foreach($games as $games)
                     <div class="card card-box">
-                        <div class="card-header text-center"><strong><strong>Game title</strong></strong></div>
+                        <div class="card-header text-center"><strong><strong>{{$games->title}}</strong></strong></div>
                         <a style="text-decoration: none; color:inherit; !important;" href="">
                             <div class="card-body text-center card-body-class">
 
@@ -51,6 +51,7 @@
                             </div>
                         </a>
                     </div>
+                    @endforeach
 
 
 
