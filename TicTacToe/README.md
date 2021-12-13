@@ -67,9 +67,11 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Setting up server
 
-We can set up the server using the next command: 
+We can set up the server using the next command in terminal: 
 ### `php artisan serve`
 
 Laravel development server will be started, usually at the following address:
 ### http://127.0.0.1:8000
+
+Login windows will open up, if you are not a registered user, clcik the Register hyperlink at the top right corner of the page. After registration, you will be redirected to the index page of Laravel project where you can use the 'New game' button to create a new game. All of the existing games will be see immidiately in the index page of the site. You can enter any game and see your oponent, the creator of that game. At the top right corner you can use dropdown Navbar to access your profile page where your personal stats like played games and winning percentage will be shown.
 
