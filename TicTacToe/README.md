@@ -85,7 +85,7 @@ If we are interested in all of the registered Users, we can type the following c
 The same goes for all the other tables in our SQLite database, just change the table name before the command (User, Game, Profile). Game objects will be made on the index page of the page with the 'New game' button, as discussed in the previous chapter.
 
 ## Creating database objects manually
-We can create database objects manually with the help of Psy Shell v0.10.12. Let's say we are trying to create a new Profile object. We enter the following command:
+We can create database objects manually with the help of Psy Shell v0.10.12. Let's say we are trying to create a new Game object. We enter the following command:
 ### `$game = new \App\Models\Game();`
 Now we can access columns in the Game table and give them values for our $game object.
 We can add the title like this:
