@@ -73,7 +73,7 @@ We can set up the server using the next command in the terminal:
 Laravel development server will be started, usually at the following address:
 ### http://127.0.0.1:8000
 
-Login windows will open up, if you are not a registered user, click the Register hyperlink at the top right corner of the page. After registration, you will be redirected to the index page of the Laravel project where you can use the 'New game' button to create a new game. All of the existing games will be seen immediately on the index page of the site. You can enter any game and see your opponent, the creator of that game. At the top right corner, you can use dropdown Navbar to access your profile page where your stats like played games and winning percentage will be shown.
+Login windows will open up, if you are not a registered user, click the Register hyperlink at the top right corner of the page. After registration, you will be redirected to the index page of the Laravel project where you can use the 'New game' button to create a new game. All of the existing games will be seen immediately on the index page of the site. You can enter any game and see your opponent, the creator of that game. At the top right corner, you can use dropdown Navbar to access your profile page where stats like played games and winning percentage will be shown.
 
 ## Database
 We can access the database using the following command in the terminal:
