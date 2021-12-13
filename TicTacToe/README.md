@@ -67,4 +67,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Setting up server
 
-We can set up the server using the next command: 'php artisan serve'
+We can set up the server using the next command: ##'php artisan serve'
