@@ -68,4 +68,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Setting up server
 
 We can set up the server using the next command: 
-### 'php artisan serve'
+### `php artisan serve`
+
+Laravel development server will be started, usually at the following address:
+### http://127.0.0.1:8000
+
