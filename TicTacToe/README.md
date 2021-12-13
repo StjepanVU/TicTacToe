@@ -67,11 +67,29 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Setting up server
 
-We can set up the server using the next command in terminal: 
+We can set up the server using the next command in the terminal: 
 ### `php artisan serve`
 
 Laravel development server will be started, usually at the following address:
 ### http://127.0.0.1:8000
 
-Login windows will open up, if you are not a registered user, clcik the Register hyperlink at the top right corner of the page. After registration, you will be redirected to the index page of Laravel project where you can use the 'New game' button to create a new game. All of the existing games will be see immidiately in the index page of the site. You can enter any game and see your oponent, the creator of that game. At the top right corner you can use dropdown Navbar to access your profile page where your personal stats like played games and winning percentage will be shown.
+Login windows will open up, if you are not a registered user, click the Register hyperlink at the top right corner of the page. After registration, you will be redirected to the index page of the Laravel project where you can use the 'New game' button to create a new game. All of the existing games will be seen immediately on the index page of the site. You can enter any game and see your opponent, the creator of that game. At the top right corner, you can use dropdown Navbar to access your profile page where your stats like played games and winning percentage will be shown.
+
+## Database
+We can access the database using the following command in the terminal:
+
+### `php artisan tinker`
+Psy Shell v0.10.12 (PHP 8.0.12 — cli) by Justin Hileman will open up.
+If we are interested in all of the registered Users, we can type the following command:
+### `User::all();`
+The same goes for all the other tables in our SQLite database, just change the table name before the command (User, Game, Profile). Game objects will be made on the index page of the page with the 'New game' button, as discussed in the previous chapter.
+
+## Creating database objects manually
+We can create database objects manually with the help of Psy Shell v0.10.12. Let's say we are trying to create a new Profile object. We enter the following command:
+### `$game = new \App\Models\Game();`
+Now we can access columns in the Game table and give them values for our $game object.
+We can add the title like this:
+### `$game->title = 'Game 1';`
+
+
 
